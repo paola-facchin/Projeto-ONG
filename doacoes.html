@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nome da Página | ONG Caminhar Juntos</title>
+  <meta name="description" content="ONG Caminhar Juntos - Projetos sociais, voluntariado, transparência e doações." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Kesia Paola Facchin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ONG Caminhar Juntos</h1>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="doacoes.html" aria-current="page">Doações</a></li>
+          <li><a href="transparencia.html">Transparência</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section>
+        <h2>Apoie com uma Doação</h2>
+        <p>Toda doação é fundamental para manter nossos projetos vivos.</p>
+        <p>Doe com segurança e acompanhe como os recursos são utilizados.</p>
+      </section>
+      <section>
+        <h2>Dados para Doação</h2>
+        <p>PIX (CNPJ): 12.345.678/0001-99</p>
+        <p>Chave e-mail: doacao@ongacminharjuntos.org.br</p>
+        <p>Banco: 000 - Banco Social</p>
+        <p>Agência: 1234</p>
+        <p>Conta: 56789-0</p>
+      </section>
+
+      <form action="#" method="post" aria-labelledby="newsletter-legend">
+        <fieldset>
+          <legend id="newsletter-legend">Informações Pessoais</legend>
+
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="valor">Valor da Doação:</label>
+          <select id="valor" name="valor" required>
+            <option value="">Selecione um valor</option>
+            <option value="10">R$10</option>
+            <option value="20">R$20</option>
+            <option value="50">R$50</option>
+            <option value="100">R$100</option>
+            <option value="outro">Outro valor</option>
+          </select>
+
+          <label for="outro_valor">Outro valor (R$):</label>
+          <input type="number" id="outro_valor" name="outro_valor" min="1" step="1" placeholder="Ex: 25" disabled>
+
+          <fieldset class="form-group">
+            <legend>Tipo de Doação</legend>
+            <label class="radio-label">
+              <input type="radio" name="tipo-doacao" value="unica" required checked>
+              Doação Única
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="tipo-doacao" value="mensal" required>
+              Doação Mensal
+            </label>
+          </fieldset>
+
+          <label for="projeto-destino">Projeto de Destino</label>
+          <select id="projeto-destino" name="projeto-destino">
+            <option value="geral">Onde for mais necessário</option>
+            <option value="educacao">Sementes do amanhã</option>
+            <option value="mulheres">Mulheres em Ação</option>
+            <option value="capacitacao">Cultura que Transforma</option>
+            <option value="saude">Saúde na Comunidade</option>
+            <option value="animais">Amigos de Patas</option>
+          </select>
+
+          <label for="pagamento">Forma de Pagamento:</label>
+          <select id="pagamento" name="pagamento" required>
+            <option value="">Selecione</option>
+            <option value="pix">PIX</option>
+            <option value="cartao">Cartão de Crédito</option>
+            <option value="boleto">Boleto Bancário</option>
+          </select>
+
+          <button type="submit" class="btn">Fazer Doação</button>
+        </fieldset>
+      </form>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ONG Caminhar Juntos</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/formulario.js" defer></script>
+
+</body>
+</html>

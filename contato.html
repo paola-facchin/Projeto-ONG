@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ONG Caminhar Juntos - Projetos sociais, voluntariado, transparência e doações." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Kesia Paola Facchin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+  <title>Contato | ONG Caminhar Juntos</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/volun.css" />
+</head>
+<body>
+  <header>
+    <h1>ONG Caminhar Juntos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="transparencia.html">Transparência</a></li>
+        <li><a href="contato.html" aria-current="page">Contato</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <h2>Entre em Contato</h2>
+      <p>Dúvidas, sugestões ou parcerias? Fale conosco!</p>
+    </section>
+
+    <form action="#" method="post" novalidate class="formulario">
+      <fieldset class="form-group">
+        <legend>Fale Conosco</legend>
+
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          minlength="3"
+          maxlength="100"
+          class="input-text"
+          autocomplete="name"
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="input-text"
+          autocomplete="email"
+        />
+
+        <label for="telefone">Telefone:</label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+          placeholder="(00) 00000-0000"
+          required
+          class="input-text"
+          inputmode="tel"
+        />
+
+        <label for="anexo">Anexo (Opcional):</label>
+        <input type="file" id="anexo" name="anexo" accept=".pdf,.doc,.jpg,.png" />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          rows="6"
+          minlength="3"
+          maxlength="100"
+          class="input-text"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn btn-primary">Enviar Cadastro</button>
+      </fieldset>
+    </form>
+
+    <!-- Informações de Contato -->
+      <section class="container">
+        <h3>Informações de Contato</h3>
+        <p><strong>Endereço:</strong> Rua Esperança, 123 – Bairro da União, São Paulo – SP</p>
+        <p><strong>Telefone:</strong> (11) 91234-5678</p>
+        <p><strong>E-mail:</strong> <a href="mailto:contato@caminharjuntos.org.br">contato@caminharjuntos.org.br</a></p>
+        <p><strong>Atendimento:</strong> Segunda a Sexta, das 9h às 17h</p>
+
+      </section>
+
+      <!-- Mapa Google Maps -->
+      <div class="container">
+        <h3>Localização</h3>
+        <iframe
+          class="mapa-ong"
+          title="Mapa da ONG Caminhar Juntos"
+          src="https://www.google.com/maps/embed?pb=EtRsWNuUCD6cTGpq6"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+      </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Caminhar Juntos</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro - ONG Caminhar Juntos</title>
+  <meta name="description" content="Formulário de cadastro para voluntariado da ONG Caminhar Juntos" />
+  <link rel="stylesheet" href="assets/css/volun.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Menu principal">
+        <ul class="menu-principal">
+          <li><a href="index.html" >Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntariado.html" aria-current="page">Voluntariado</a></li>
+          <li><a href="doacoes.html">Como Doar</a></li>
+          <li><a href="transparencia.html">Transparência</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section aria-labelledby="seja-voluntario">
+        <h1 id="seja-voluntario">Seja um Voluntário</h1>
+        <article>
+          <p>Você pode fazer parte dessa transformação! Temos diversas oportunidades nas áreas de educação, cultura, saúde, eventos, comunicação e logística.</p>
+          <video controls>
+            <source src="assets/videos/video2.mp4" type="video/mp4" />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+        </article>
+        <article>
+          <h2>Como funciona:</h2>
+          <ol type="1">
+            <li>Cadastre-se em nosso formulário</li>
+            <li>Escolha as áreas com as quais se identifica</li>
+            <li>Participe da seleção e capacitação online</li>
+            <li>Comece a atuar!</li>
+          </ol>
+        </article>
+
+        <h2 style="text-align: center;">Formulário de Cadastro</h2>
+        <form action="#" method="post" novalidate class="formulario">
+          <fieldset class="form-group">
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome completo:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              required
+              minlength="3"
+              maxlength="100"
+              class="input-text"
+              autocomplete="name"
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="input-text"
+              autocomplete="email"
+            />
+
+            <label for="cpf">CPF:</label>
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+              placeholder="000.000.000-00"
+              required
+              class="input-text"
+              inputmode="numeric"
+            />
+
+            <label for="telefone">Telefone:</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+              placeholder="(00) 00000-0000"
+              required
+              class="input-text"
+              inputmode="tel"
+            />
+
+            <label for="cep">CEP:</label>
+            <input
+              type="text"
+              id="cep"
+              name="cep"
+              pattern="\d{5}-\d{3}"
+              placeholder="00000-000"
+              required
+              class="input-text"
+              inputmode="numeric"
+            />
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend>Habilidades</legend>
+            <label class="checkbox-label">
+              <input type="checkbox" name="habilidades" value="ensino" />
+              Ensino
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="habilidades" value="logistica" />
+              Logística
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="habilidades" value="saude" />
+              Saúde
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="habilidades" value="comunicacao" />
+              Comunicação
+            </label>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend>Disponibilidade</legend>
+            <label for="dias">Dias disponíveis:</label>
+            <select id="dias" name="dias" multiple required class="select-multiple" size="5">
+              <option value="segunda">Segunda-feira</option>
+              <option value="terca">Terça-feira</option>
+              <option value="quarta">Quarta-feira</option>
+              <option value="quinta">Quinta-feira</option>
+              <option value="sexta">Sexta-feira</option>
+              <option value="sabado">Sábado</option>
+              <option value="domingo">Domingo</option>
+            </select>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary">Enviar Cadastro</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ONG Caminhar Juntos. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
