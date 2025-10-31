@@ -1,6 +1,7 @@
 // ===============================
 // ACESSIBILIDADE E NAVEGAÇÃO POR TECLADO
 // ===============================
+
 document.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('main-nav');
   const hamburger = document.querySelector('.hamburger');
