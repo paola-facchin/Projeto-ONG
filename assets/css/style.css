@@ -714,3 +714,16 @@ footer a:focus {
   .post-titulo { font-size:1.8rem; }
   .post-conteudo { font-size:0.95rem; }
 }
+
+/*=====================
+        CONTRASTE
+=====================*/
+
+:root.high-contrast {
+  --bg-claro: #000;
+  --texto: #fff;
+  --bg-card: #111;
+  --primaria: #ff0;
+  --secundaria: #0ff;
+  --secundaria-hover: #ffcc00;
+}
