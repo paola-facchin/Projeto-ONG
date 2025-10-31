@@ -144,6 +144,8 @@ Este projeto está licenciado sob a ISC License.
 Consulte o arquivo LICENSE
  para mais detalhes.
 
+![Acessibilidade AA](https://img.shields.io/badge/Acessibilidade-WCAG%202.1%20AA-brightgreen)
+
 👩‍💻 Autora
 
 Kesia Paola Facchin
