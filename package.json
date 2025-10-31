@@ -1,0 +1,29 @@
+{
+  "name": "projeto-ong",
+  "version": "1.0.0",
+  "description": "🎯 Visão Geral",
+  "main": "index.js",
+  "scripts": {
+    "minify-js": "mkdir -p assets/js/min && for file in assets/js/**/*.js; do base=$(basename \"$file\") && name=${base%.js} && [[ $name == *.min ]] && continue || npx terser \"$file\" -o \"assets/js/min/$name.min.js\" --compress --mangle; done",
+    "minify-css": "mkdir -p assets/css/min && npx cleancss -o assets/css/min/style.min.css assets/css/style.css",
+    "minify-html": "npx html-minifier index.html -o index.min.html --collapse-whitespace --remove-comments --minify-css true --minify-js true",
+    "build": "npm run minify-js && npm run minify-css && npm run minify-html"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paola-facchin/Projeto-ONG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paola-facchin/Projeto-ONG/issues"
+  },
+  "homepage": "https://github.com/paola-facchin/Projeto-ONG#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "html-minifier": "^4.0.0",
+    "terser": "^5.44.0"
+  }
+}
